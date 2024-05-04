@@ -14,7 +14,7 @@
     state: absent
   when: >
     force_removal or
-    removal_prompt.user_input == 'yes'
+    removal_prompt.user_input | bool
   loop:
     - "/etc/apache2/sites-enabled/site_{{ name }}.conf"
     - "/etc/apache2/sites-available/site_{{ name }}.conf"
@@ -30,4 +30,4 @@
   when: >
     site.mode == 'serve' and
     (force_removal or
-    removal_prompt.user_input == 'yes')
+    removal_prompt.user_input | bool)
