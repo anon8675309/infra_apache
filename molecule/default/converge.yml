@@ -9,7 +9,7 @@
           domain: 'apache2.test.ansibleguy.net'
 
           ssl:
-            mode: 'ca'
+            mode: 'snakeoil'
             cert:
               cn: 'Apache2'
               org: 'AnsibleGuy Test'

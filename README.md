@@ -58,7 +58,7 @@ apache:
       path: '/var/www/site_guys_statics'
 
     ssl:
-      mode: 'ca'  # create minimal ca with signed server-certificate
+      mode: 'snakeoil'
 
     config:  # add settings as key-value pairs
       KeepAliveTimeout: 10
