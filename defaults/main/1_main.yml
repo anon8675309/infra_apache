@@ -59,7 +59,6 @@ defaults_apache:
     'X-Frame-Options': 'SAMEORIGIN'
     'X-Content-Type-Options': 'nosniff'
     'X-Permitted-Cross-Domain-Policies': '"none"'
-    'X-XSS-Protection': '"1; mode=block"'
     'Header always edit Set-Cookie ^(.*)$': '$1;HttpOnly;Secure;SameSite=None'
     # 'Header set Permissions-Policy': '"none"'
     # 'Header set Content-Security-Policy': '"default-src https:; font-src https:; img-src https:; script-src https:; style-src https:;"'
